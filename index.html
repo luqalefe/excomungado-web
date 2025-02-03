@@ -15,19 +15,20 @@
                 <img src="logo excomungado.png" alt="Logo da Banda">
             </div>
             <button class="menu-toggle" aria-label="Toggle menu">
-                &#9776; <!-- Ícone de hambúrguer -->
+                &#9776;
+                <!-- Ícone de hambúrguer -->
             </button>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#store">Loja</a></li>
-                    <li><a href="videos.html">Vídeos</a></li>
-                    <li><a href="#discografia">Discografia</a></li>
-                    <li><a href="#rider-tecnico">Rider Técnico</a></li>
-                    <li><a href="formulario.html">Formulario de Contratação</a></li>
-                </ul>
-            </nav>
+           <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="discografia.html">Discografia</a></li>
+                <li><a href="rider.html">Rider Técnico</a></li>
+                <li><a href="formulario.html">Formulário de Contratação</a></li>
+            </ul>
+        </nav>
         </div>
     
             <button class="theme-toggle" onclick="toggleTheme()">Modo Escuro</button>
@@ -252,4 +253,14 @@ document.querySelector('.menu-toggle').addEventListener('click', function () {
 });
 
 
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+
+        toggleButton.addEventListener("click", function () {
+            menu.classList.toggle("active");
+        });
+    });
 </script>
