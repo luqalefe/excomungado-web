@@ -385,26 +385,16 @@ body.light-mode .theme-toggle {
 }
 
 /* Loja */
-.store {
-    width: 100%;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #111;
-    color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
-
-/* Cabeçalho da Loja */
+/* Header da Loja */
 .store-header {
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .store-header h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .store-header p {
@@ -412,7 +402,7 @@ body.light-mode .theme-toggle {
     color: #bbb;
 }
 
-/* Grid de produtos - Ajuste para manter lado a lado */
+/* Grid de Produtos */
 .product-grid {
     display: flex;
     flex-wrap: wrap;
@@ -496,7 +486,7 @@ body.light-mode .theme-toggle {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .product-grid {
         flex-direction: column; /* Em telas menores, os produtos empilham */
         align-items: center;
@@ -508,6 +498,26 @@ body.light-mode .theme-toggle {
 
     .store-header p {
         font-size: 1rem;
+    }
+
+    .product-card {
+        width: 90%; /* Ocupa mais espaço da tela */
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .store-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .store-header p {
+        font-size: 0.9rem;
+    }
+
+    .product-card {
+        width: 100%; /* Ocupar a largura total em telas muito pequenas */
+        max-width: 300px;
     }
 }
 
