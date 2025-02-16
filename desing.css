@@ -28,8 +28,8 @@ body {
     align-items: center;
 }
 body.light-mode {
-    background-color: #f9f9f9; /* Fundo claro */
-    color: #000; /* Texto preto */
+    background-color: #000; /* Fundo claro */
+    color: #ffff; /* Texto preto */
 }
 
 /* Navbar */
@@ -45,14 +45,14 @@ body.light-mode .navbar ul li a {
 
 /* Loja */
 body.light-mode .store {
-    background-color: #ffffff;
-    color: #000;
+    background-color: #000;
+    color: #ffff;
     border: none; /* Remove borda se ela for um problema */
 }
 
 /* Cartões de produtos */
 body.light-mode .product-card {
-    background-color: #f4f4f4;
+    background-color: #000;
     color: #000;
 }
 /* Botão de alternância de tema */
