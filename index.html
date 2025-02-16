@@ -35,12 +35,6 @@
                     <li class="nav-item"><a class="nav-link" href="#rider-tecnico">Rider Técnico</a></li>
                     <li class="nav-item"><a class="nav-link" href="formulario.html">Formulario de Contratação</a></li>
                 </ul>
-            </nav>
-        </div>
-    
-            <button class="theme-toggle" onclick="toggleTheme()">Modo Escuro</button>
-        </div>
-            </nav>
         </div>
     </header>
 
@@ -228,27 +222,6 @@
 
     <script src="carousel.js"></script>
 
-</body>
-</html>
-<script>
-  function toggleTheme() {
-    const body = document.body;
-    const button = document.querySelector('.theme-toggle');
-
-    body.classList.toggle('light-mode');
-
-    if (body.classList.contains('light-mode')) {
-        button.textContent = 'Modo Escuro'; // Atualiza o texto do botão
-    } else {
-        button.textContent = 'Modo Claro';
-    }
-}
-document.querySelector('.menu-toggle').addEventListener('click', function () {
-    document.querySelector('.menu').classList.toggle('active');
-});
-
-
-</script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const toggleButton = document.querySelector(".menu-toggle");
