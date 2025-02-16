@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -13,8 +18,8 @@ img {
 /* Corpo do site */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000; /* Fundo preto */
-    color: #fff; /* Texto branco */
+    background-color: #000;
+    color: #fff;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -24,10 +29,8 @@ body {
 /* Navbar */
 .navbar {
     width: 100%;
-    background-color: #111; /* Fundo escuro */
+    background-color: #111;
     padding: 10px 0;
-    display: flex;
-    justify-content: center;
 }
 
 .navbar-container {
@@ -35,95 +38,28 @@ body {
     max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-/* Logo */
 .navbar .logo img {
     width: 120px;
-    margin-right: 30px;
 }
 
-/* Menu */
 .menu {
     list-style: none;
     display: flex;
     gap: 20px;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu li {
-    list-style: none;
-    text-align: center;
 }
 
 .menu li a {
-    color: #fff; /* Texto branco */
+    color: #fff;
     text-decoration: none;
     font-size: 1em;
     text-transform: uppercase;
 }
 
 .menu li a:hover {
-    color: #aaa; /* Texto cinza ao passar o mouse */
-}
-
-/* Botão hambúrguer (mobile) */
-.menu-toggle {
-    display: none;
-    font-size: 1.5em;
-    color: #fff;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* Responsividade */
-@media (max-width: 992px) {
-    .menu-toggle {
-        display: block;
-        position: absolute;
-        right: 20px;
-    }
-
-    .navbar-container {
-        justify-content: space-between;
-    }
-
-    .menu li:nth-child(4),
-    .menu li:nth-child(5) {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        background-color: #111;
-        padding: 20px;
-        z-index: 1000;
-    }
-
-    .menu.active {
-        display: flex;
-    }
-
-    .menu li {
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .navbar .logo img {
-        width: 100px;
-    }
+    color: #aaa;
 }
 
 /* Carrossel */
@@ -132,12 +68,6 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-}
-
-.carousel-wrapper {
-    width: 100%;
-    height: 100%;
-    position: relative;
 }
 
 .carousel-images {
@@ -173,101 +103,78 @@ body {
     right: 10px;
 }
 
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #d00000;
+}
+
 /* Seções */
 .section {
     width: 100%;
     max-width: 1000px;
     padding: 40px 20px;
     text-align: center;
+    background-color: #000; /* Fundo preto para as seções */
 }
 
 .section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #d00000; /* Vermelho para títulos */
+    color: #d00000;
 }
 
 /* Discografia */
 .discografia-section {
     width: 100%;
     background-color: #111;
-    border-radius: 10px;
     padding: 20px;
     margin-top: 20px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.discografia-title {
-    color: #d00000;
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Grade de Músicas */
 .musica-grid {
     display: flex;
     gap: 20px;
     overflow-x: auto;
     padding-bottom: 20px;
-    justify-content: center;
-    width: 100%;
 }
 
-.musica-grid::-webkit-scrollbar {
-    height: 8px;
-}
-
-.musica-grid::-webkit-scrollbar-thumb {
-    background-color: #d00000;
-    border-radius: 4px;
-}
-
-.musica-grid::-webkit-scrollbar-track {
-    background: #333;
-}
-
-/* Cards de Música */
 .musica {
     background-color: #222;
     border-radius: 8px;
     padding: 15px;
     flex: 0 0 200px;
     transition: transform 0.3s;
-    text-align: center;
 }
 
 .musica:hover {
     transform: translateY(-5px);
 }
 
-.musica h3 {
-    color: #fff;
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.musica p {
-    color: #aaa;
-    font-size: 0.9em;
-    line-height: 1.4;
-}
-
 .musica img {
     width: 100%;
     border-radius: 8px;
-    margin: 10px 0;
 }
 
-/* Links de Streaming */
 .links-streaming a {
     color: #d00000;
     margin: 0 5px;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .links-streaming a:hover {
@@ -281,34 +188,25 @@ body {
     margin: 40px auto;
     padding: 20px;
     background-color: #111;
-    color: #f0f0f0;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
 }
 
-/* Produtos */
 .product-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
-    padding: 10px;
+    justify-content: center;
 }
 
 .product-card {
     background-color: #222;
     border-radius: 10px;
     padding: 15px;
-    text-align: center;
-    color: #ddd;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     width: 250px;
+    transition: transform 0.3s;
 }
 
 .product-card:hover {
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
     transform: translateY(-5px);
 }
 
@@ -317,49 +215,70 @@ body {
     height: 180px;
     object-fit: cover;
     border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.product-card img:hover {
-    transform: scale(1.05);
-}
-
-.product-card h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-.price {
-    font-size: 1.3em;
-    color: #e63946;
-    font-weight: bold;
-    margin-bottom: 10px;
 }
 
 .buy-button {
-    background-color: #e63946;
+    background-color: #d00000;
     border: none;
-    padding: 12px 15px;
+    padding: 10px;
     color: #fff;
     cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background 0.3s, transform 0.2s;
     width: 100%;
-    max-width: 180px;
+    border-radius: 5px;
 }
 
 .buy-button:hover {
-    background-color: #d62839;
-    transform: scale(1.05);
+    background-color: #b20000;
+}
+
+/* Seção Rider Técnico */
+.rider-section {
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #000; /* Fundo preto */
+}
+
+.rider-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.rider-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #111; /* Fundo escuro para a tabela */
+    color: #fff; /* Texto branco */
+}
+
+.rider-table th, .rider-table td {
+    padding: 12px;
+    border: 1px solid #444; /* Bordas mais suaves */
+    text-align: left;
+}
+
+.rider-table th {
+    background-color: #222; /* Cabeçalho mais escuro */
+    color: #d00000; /* Texto vermelho para os cabeçalhos */
 }
 
 /* Rodapé */
 .footer {
+    width: 100%;
     background-color: #000;
     padding: 20px;
     text-align: center;
+    color: #fff; /* Texto branco */
+}
+
+.social-links a {
+    color: #d00000;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
     color: #fff;
 }
