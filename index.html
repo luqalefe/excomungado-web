@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>excomungado</title>
-    <link rel="stylesheet" href="desing.css">
+    <title>Excomungado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="desing.css">
 </head>
-<body>
-    
+<body class="bg-black text-white">
+
     <!-- Navbar -->
-<header class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="#">
-            <img src="logo excomungado.png" alt="Logo da Banda" style="height: 40px; width: auto;">
-        </a>
-
-        <!-- Botão de Toggle (Menu de Hambúrguer) -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Menu de Navegação -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <nav>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo excomungado.png" alt="Logo da Banda" class="logo">
+            </a>
+    
+            <!-- Botão de Toggle (Menu de Hambúrguer) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Menu de Navegação -->
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
@@ -33,135 +32,199 @@
                     <li class="nav-item"><a class="nav-link" href="videos.html">Vídeos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#discografia">Discografia</a></li>
                     <li class="nav-item"><a class="nav-link" href="#rider-tecnico">Rider Técnico</a></li>
-                    <li class="nav-item"><a class="nav-link" href="formulario.html">Formulario de Contratação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formulario.html">Formulário de Contratação</a></li>
                 </ul>
-        </div>
-    </header>
-
-    <!-- Banner Carrossel -->
-    <div class="carousel">
-        <button class="carousel-control prev">◀</button>
-        <div class="carousel-wrapper">
-            <div class="carousel-images">
-                <img src="Design sem nome (1).png" alt="Image 1">
-                <img src="Design sem nome (2).png" alt="Image 2">
-                <img src="Design sem nome (1).png" alt="Image 3">
             </div>
         </div>
-        <button class="carousel-control next">▶</button>
+    </header>
+    
+    <!-- Banner Carrossel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Design sem nome (1).png" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="Design sem nome (2).png" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="Design sem nome (1).png" class="d-block w-100" alt="Image 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
     </div>
-    
-    
-    
-    <!-- Seções da página -->
-    <section id="about" class="section">
-        <h2>Sobre</h2>
-        <p>A Excomungado é uma banda que surgiu em 2021 com uma abordagem independente e experimental, trazendo sons que exploram desde o indie e lo-fi até influências da MPB e do rock alternativo. O lançamento de seu primeiro single, “Você mudou e quem se fodeu fui eu”, marcou o início de sua trajetória em setembro de 2021, conquistando ouvintes com letras sinceras e um estilo único. A banda continua a construir seu público, com lançamentos como "Borboletas de Huana" e "Convite às 19", que incorporam sintetizadores e um toque nostálgico dos anos 80, e que juntos ajudaram a consolidar a identidade sonora do grupo.
 
-            Além de seus singles que atraíram milhares de streams no Spotify, o Excomungado se destacou em apresentações ao vivo em eventos regionais, como o Festival Dudapalooza e o Rock'n Roll Fest, e em diversas edições do evento “Quinta Autoral” no Studio Beer. A banda já teve a obrigação de dividir o palco com nomes do cenário acreano, como Dito Bruzugu e Duda Modesto, além de participar do Bloquinho Autoral de Carnaval em 2024.
-            
-            Em junho de 2023, o Excomungado alcançou seu maior sucesso até então com o single “Estilo Djavan”, acumulando 4.554 streams em menos de dois meses, um feito conquistado de forma orgânica, sem impulso pago. Em fevereiro de 2024, a banda fez uma apresentação inovadora ao lado de d.silvestre, ampliando ainda mais sua diversidade musical e conquistando até mesmo a atenção de ouvintes internacionais.
-            
-            Hoje, o Excomungado continua evoluindo com seu estilo autêntico e suas produções criativas, conquistando seu espaço no cenário musical com uma base de fãs cada vez mais fiéis e performances energéticas que deixam sua marca em cada evento.</p>
+    <!-- Seção Sobre -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center mb-4">Sobre</h2>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <p class="text-justify">
+                    A Excomungado é uma banda que surgiu em 2021 com uma abordagem independente e experimental, trazendo sons que exploram desde o indie e lo-fi até influências da MPB e do rock alternativo. O lançamento de seu primeiro single, “Você mudou e quem se fodeu fui eu”, marcou o início de sua trajetória em setembro de 2021, conquistando ouvintes com letras sinceras e um estilo único. A banda continua a construir seu público, com lançamentos como "Borboletas de Huana" e "Convite às 19", que incorporam sintetizadores e um toque nostálgico dos anos 80, e que juntos ajudaram a consolidar a identidade sonora do grupo.
+                </p>
+                <p class="text-justify">
+                    Além de seus singles que atraíram milhares de streams no Spotify, o Excomungado se destacou em apresentações ao vivo em eventos regionais, como o Festival Dudapalooza e o Rock'n Roll Fest, e em diversas edições do evento “Quinta Autoral” no Studio Beer. A banda já teve a obrigação de dividir o palco com nomes do cenário acreano, como Dito Bruzugu e Duda Modesto, além de participar do Bloquinho Autoral de Carnaval em 2024.
+                </p>
+                <p class="text-justify">
+                    Em junho de 2023, o Excomungado alcançou seu maior sucesso até então com o single “Estilo Djavan”, acumulando 4.554 streams em menos de dois meses, um feito conquistado de forma orgânica, sem impulso pago. Em fevereiro de 2024, a banda fez uma apresentação inovadora ao lado de d.silvestre, ampliando ainda mais sua diversidade musical e conquistando até mesmo a atenção de ouvintes internacionais.
+                </p>
+                <p class="text-justify">
+                    Hoje, o Excomungado continua evoluindo com seu estilo autêntico e suas produções criativas, conquistando seu espaço no cenário musical com uma base de fãs cada vez mais fiéis e performances energéticas que deixam sua marca em cada evento.
+                </p>
+            </div>
+        </div>
     </section>
+
     <!-- Seção Discografia -->
-<section id="discografia" class="discografia-section">
-    <h2 class="discografia-title">Discografia</h2>
-    <div class="musica-grid">
-    <div class="musica">
-        <h3>Borboletas de huana</h3>
-        <p></p>
-        <img src="borboletas de huana.jfif" alt="Logo da Banda">
-        <div class="links-streaming">
-            <a href="https://open.spotify.com/intl-pt/track/4oWiCKawhGb5zKaWjD8QB8?si=5b550d69dc2f49b5" target="_blank">Spotify</a>
-            <a href="https://open.spotify.com/intl-pt/track/4oWiCKawhGb5zKaWjD8QB8?si=5b550d69dc2f49b5" target="_blank">YouTube</a>
-            <a href="https://open.spotify.com/intl-pt/track/4oWiCKawhGb5zKaWjD8QB8?si=5b550d69dc2f49b5" target="_blank">Apple Music</a>
+    <section id="discografia" class="container py-5">
+        <h2 class="text-center mb-4">Discografia</h2>
+        <div class="discografia-container">
+            <!-- Música 1: Borboletas de Huana -->
+            <div class="card-container">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="borboletas de huana.jfif" class="card-img-top" alt="Borboletas de Huana">
+                    <div class="card-body">
+                        <h5 class="card-title">Borboletas de Huana</h5>
+                        <div class="d-flex justify-content-around">
+                            <a href="https://open.spotify.com/intl-pt/track/4oWiCKawhGb5zKaWjD8QB8?si=5b550d69dc2f49b5" class="btn btn-outline-danger" target="_blank">Spotify</a>
+                            <a href="https://open.spotify.com/intl-pt/track/4oWiCKawhGb5zKaWjD8QB8?si=5b550d69dc2f49b5" class="btn btn-outline-danger" target="_blank">YouTube</a>
+                            <a href="https://open.spotify.com/intl-pt/track/4oWiCKawhGb5zKaWjD8QB8?si=5b550d69dc2f49b5" class="btn btn-outline-danger" target="_blank">Apple Music</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Música 2: Convite às 19 -->
+            <div class="card-container">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="convite as 19 capa.jfif" class="card-img-top" alt="Convite às 19">
+                    <div class="card-body">
+                        <h5 class="card-title">Convite às 19</h5>
+                        <div class="d-flex justify-content-around">
+                            <a href="https://open.spotify.com/intl-pt/track/1dFBG4lcEO3lFTsYrAAzeB?si=8130f423fb92476b" class="btn btn-outline-danger" target="_blank">Spotify</a>
+                            <a href="https://open.spotify.com/intl-pt/track/1dFBG4lcEO3lFTsYrAAzeB?si=8130f423fb92476b" class="btn btn-outline-danger" target="_blank">YouTube</a>
+                            <a href="https://open.spotify.com/intl-pt/track/1dFBG4lcEO3lFTsYrAAzeB?si=8130f423fb92476b" class="btn btn-outline-danger" target="_blank">Apple Music</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Música 3: bonappetite -->
+            <div class="card-container">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="bonappetite.jfif" class="card-img-top" alt="bonappetite">
+                    <div class="card-body">
+                        <h5 class="card-title">bonappetite</h5>
+                        <div class="d-flex justify-content-around">
+                            <a href="https://open.spotify.com/intl-pt/track/444KFTPsQ2gv23tpIwRwKU?si=ddbef66885614757" class="btn btn-outline-danger" target="_blank">Spotify</a>
+                            <a href="https://open.spotify.com/intl-pt/track/444KFTPsQ2gv23tpIwRwKU?si=ddbef66885614757" class="btn btn-outline-danger" target="_blank">YouTube</a>
+                            <a href="https://open.spotify.com/intl-pt/track/444KFTPsQ2gv23tpIwRwKU?si=ddbef66885614757" class="btn btn-outline-danger" target="_blank">Apple Music</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Música 4: vsdfdfbsifd -->
+            <div class="card-container">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="pngfodido.jfif" class="card-img-top" alt="vsdfdfbsifd">
+                    <div class="card-body">
+                        <h5 class="card-title">vsdfdfbsifd</h5>
+                        <div class="d-flex justify-content-around">
+                            <a href="https://open.spotify.com/intl-pt/track/5swGskBJK1kD7atsr9rsoh?si=543989db8f834b04" class="btn btn-outline-danger" target="_blank">Spotify</a>
+                            <a href="https://open.spotify.com/intl-pt/track/5swGskBJK1kD7atsr9rsoh?si=543989db8f834b04" class="btn btn-outline-danger" target="_blank">YouTube</a>
+                            <a href="https://open.spotify.com/intl-pt/track/5swGskBJK1kD7atsr9rsoh?si=543989db8f834b04" class="btn btn-outline-danger" target="_blank">Apple Music</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Música 5: estilo Djavan -->
+            <div class="card-container">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="estilodjavan.jfif" class="card-img-top" alt="estilo Djavan">
+                    <div class="card-body">
+                        <h5 class="card-title">estilo Djavan</h5>
+                        <div class="d-flex justify-content-around">
+                            <a href="https://open.spotify.com/intl-pt/track/6XANPiSX6vJFyZh5ZZxl5D?si=7e94167c12e04524" class="btn btn-outline-danger" target="_blank">Spotify</a>
+                            <a href="https://open.spotify.com/intl-pt/track/6XANPiSX6vJFyZh5ZZxl5D?si=7e94167c12e04524" class="btn btn-outline-danger" target="_blank">YouTube</a>
+                            <a href="https://open.spotify.com/intl-pt/track/6XANPiSX6vJFyZh5ZZxl5D?si=7e94167c12e04524" class="btn btn-outline-danger" target="_blank">Apple Music</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="musica">
-        <h3>Convite as 19</h3>
-        <p></p>
-        <img src="convite as 19 capa.jfif" alt="Logo da Banda">
-        <div class="links-streaming">
-            <a href="https://open.spotify.com/intl-pt/track/1dFBG4lcEO3lFTsYrAAzeB?si=8130f423fb92476b" target="_blank">Spotify</a>
-            <a href="https://open.spotify.com/intl-pt/track/1dFBG4lcEO3lFTsYrAAzeB?si=8130f423fb92476b" target="_blank">YouTube</a>
-            <a href="https://open.spotify.com/intl-pt/track/1dFBG4lcEO3lFTsYrAAzeB?si=8130f423fb92476b" target="_blank">Apple Music</a>
+ <!-- Seção Loja -->
+<!-- Seção Loja -->
+<section id="store" class="container py-5">
+    <h2 class="text-center mb-4">Loja</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 justify-content-center">
+        <!-- Produto 1 -->
+        <div class="col">
+            <div class="card h-100 bg-dark text-white product-card">
+                <img src="WhatsApp Image 2024-11-13 at 09.27.09.jpeg" class="card-img-top" alt="Produto 1">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Produto 1</h5>
+                    <p class="card-text">R$50,00</p>
+                    <a href="#" class="btn btn-danger buy-button">Comprar</a>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="musica">
-        <h3>bonappetite</h3>
-        <p></p>
-        <img src="bonappetite.jfif" alt="Logo da Banda">
-        <div class="links-streaming">
-            <a href="https://open.spotify.com/intl-pt/track/444KFTPsQ2gv23tpIwRwKU?si=ddbef66885614757" target="_blank">Spotify</a>
-            <a href="https://open.spotify.com/intl-pt/track/444KFTPsQ2gv23tpIwRwKU?si=ddbef66885614757 target="_blank">YouTube</a>
-            <a href="https://open.spotify.com/intl-pt/track/444KFTPsQ2gv23tpIwRwKU?si=ddbef66885614757" target="_blank">Apple Music<
+        <!-- Produto 2 -->
+        <div class="col">
+            <div class="card h-100 bg-dark text-white product-card">
+                <img src="WhatsApp Image 2024-11-13 at 09.27.09.jpeg" class="card-img-top" alt="Produto 2">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Produto 2</h5>
+                    <p class="card-text">R$60,00</p>
+                    <a href="#" class="btn btn-danger buy-button">Comprar</a>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="musica">
-        <h3>vsdfdfbsifd</h3>
-        <p></p>
-        <img src="pngfodido.jfif" alt="Logo da Banda">
-        <div class="links-streaming">
-            <a href="https://open.spotify.com/intl-pt/track/5swGskBJK1kD7atsr9rsoh?si=543989db8f834b04" target="_blank">Spotify</a>
-            <a href="https://open.spotify.com/intl-pt/track/5swGskBJK1kD7atsr9rsoh?si=543989db8f834b04" target="_blank">YouTube</a>
-            <a href="https://open.spotify.com/intl-pt/track/5swGskBJK1kD7atsr9rsoh?si=543989db8f834b04" target="_blank">Apple Music</a>
+        <!-- Produto 3 -->
+        <div class="col">
+            <div class="card h-100 bg-dark text-white product-card">
+                <img src="WhatsApp Image 2024-11-13 at 09.27.09.jpeg" class="card-img-top" alt="Produto 3">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Produto 3</h5>
+                    <p class="card-text">R$70,00</p>
+                    <a href="#" class="btn btn-danger buy-button">Comprar</a>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="musica">
-        <h3>estilo Djavan”</h3>
-        <p></p>
-        <img src="estilodjavan.jfif" alt="Logo da Banda">
-        <div class="links-streaming">
-            <a href="https://open.spotify.com/intl-pt/track/6XANPiSX6vJFyZh5ZZxl5D?si=7e94167c12e04524" target="_blank">Spotify</a>
-            <a href="https://open.spotify.com/intl-pt/track/6XANPiSX6vJFyZh5ZZxl5D?si=7e94167c12e04524" target="_blank">YouTube</a>
-            <a href="https://open.spotify.com/intl-pt/track/6XANPiSX6vJFyZh5ZZxl5D?si=7e94167c12e04524" target="_blank">Apple Music</a>
+        <!-- Produto 4 -->
+        <div class="col">
+            <div class="card h-100 bg-dark text-white product-card">
+                <img src="WhatsApp Image 2024-11-13 at 09.27.09.jpeg" class="card-img-top" alt="Produto 4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Produto 4</h5>
+                    <p class="card-text">R$80,00</p>
+                    <a href="#" class="btn btn-danger buy-button">Comprar</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-    <section id="store" class="section store">
-        <div class="store-header">
-            <h2>Loja</h2>
-            <p>Produtos oficiais da banda.</p>
-        </div>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="WhatsApp Image 2024-11-13 at 09.27.09.jpeg" alt="Produto 1">
-                <h3>Produto 1</h3>
-                <p class="price">R$50,00</p>
-                <button class="buy-button">Comprar</button>
-            </div>
-            <div class="product-card">
-                <img src="WhatsApp Image 2024-11-13 at 09.27.09.jpeg" alt="Produto 1">
-                <h3>Produto 1</h3>
-                <p class="price">R$50,00</p>
-                <button class="buy-button">Comprar</button>
-            </div>
-            <div class="product-card">
-                <img src="WhatsApp Image 2024-11-13 at 09.27.09.jpeg" alt="Produto 1">
-                <h3>Produto 1</h3>
-                <p class="price">R$50,00</p>
-                <button class="buy-button">Comprar</button>
-            </div>
-            <div class="product-card">
-                <img src="WhatsApp Image 2024-11-13 at 09.27.09.jpeg" alt="Produto 1">
-                <h3>Produto 1</h3>
-                <p class="price">R$50,00</p>
-                <button class="buy-button">Comprar</button>
-            </div>
-        </div>
-    </section>
 
-    <!-- Rider Técnico -->
-    <section id="rider-tecnico" class="rider-section">
-        <h2>Rider Técnico</h2>
-        <div class="rider-container">
-            <table class="rider-table">
+    <!-- Seção Rider Técnico -->
+    <section id="rider-tecnico" class="container py-5">
+        <h2 class="text-center mb-4">Rider Técnico</h2>
+        <div class="table-responsive">
+            <table class="table table-dark table-striped">
                 <thead>
                     <tr>
                         <th>Instrumento/Equipamento</th>
